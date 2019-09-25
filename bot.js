@@ -7,7 +7,7 @@ var adminprefix = '-'
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("-obc")) {
+    if (message.content.startsWith("-all")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "-";
+  var prefix = "-online";
 
   client.on("message", message => {
   
