@@ -81,7 +81,6 @@ m.sendMessage(args)
        -all |برودكاست للجميع
        
        لضافه البوت -----)) https://discordapp.com/oauth2/authorize?client_id=626448214614081557&permissions=0&scope=bot
-
 ** `)
    message.author.sendEmbed(embed)
    
