@@ -66,7 +66,7 @@ m.sendMessage(args)
 });
 
   client.on('message', msg => {
-    if(msg.content === '-help1')
+    if(msg.content === '-help')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -78,12 +78,7 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       -all | لأرسال برود كاست للكل
-
-       -online  |  لأرسال برود كاست للأونلاين
-
-       -adminbc | برودكاست عادي
-
+       -all | برودكاست للجميع
        ** `)
    message.author.sendEmbed(embed)
    
