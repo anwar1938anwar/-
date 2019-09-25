@@ -66,7 +66,7 @@ m.sendMessage(args)
 });
 
   client.on('message', msg => {
-    if(msg.content === '-help')
+    if(msg.content === '-help1')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
