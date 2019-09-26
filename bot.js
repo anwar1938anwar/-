@@ -87,13 +87,26 @@ m.sendMessage(args)
    }
    });
 
+  client.on("message", message => {
+    if (message.content === "-invite") {
+     const embed = new Discord.RichEmbed() 
+         .setColor("#00FF00")
+         .setThumbnail(message.author.avatarURL)
+         .setDescription( رابط البوت 
+       لضافه البوت -----)) https://discordapp.com/oauth2/authorize?client_id=626448214614081557&permissions=0&scope=bot
+** `)
+   message.author.sendEmbed(embed)
+   
+   }
+   });
+
 const developers = ["533217684066664449","id"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
   if (message.content.startsWith(adminprefix + 'setg')) {
-    client.user.setGame(argresult);
+    client.user.setGame(اذا بدك بوت مثله 15 الف تعال خاص ---> Anwar#2279);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
